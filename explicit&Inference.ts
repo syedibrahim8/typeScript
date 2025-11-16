@@ -35,3 +35,9 @@ const isLoading: boolean = true;
 
 // Array
 let fname: string[]=["Syed","Ibrahim","Ali"]
+
+//Function with Explicit types
+function greet (name: string){
+    console.log(`Hi ${name}`);
+}
+greet("Syed");
