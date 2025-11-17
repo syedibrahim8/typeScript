@@ -41,3 +41,32 @@ function greet (name: string){
     console.log(`Hi ${name}`);
 }
 greet("Syed");
+
+// Type Inference
+
+// TypeScript infers 'string'
+let username = "alice";
+
+// TypeScript infers 'number'
+let score = 100;
+
+// TypeScript infers 'boolean[]'
+let flags = [true, false, true];
+
+// TypeScript infers return type as 'number'
+function add(a: number, b: number) {
+return a + b;
+}
+
+// When Inference Shines
+// Object Literal Inference
+// TypeScript infers the shape of the object
+const user = {
+name: "Alice",
+age: 30,
+isAdmin: true
+};
+
+// TypeScript knows these properties exist
+console.log(user.name);  // OK
+// console.log(user.email); // Error: Property 'email' does not exist
